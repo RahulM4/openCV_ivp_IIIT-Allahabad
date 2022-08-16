@@ -12,11 +12,13 @@ cv.imshow('My Image',img)
 # # Grayscaling and Thresholding image
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray Image',gray)
+cv.imwrite('image/gray.jpg',gray)
 
 
 # Crop the Image 
 crop_img = img[0:200, 0:200]
 cv.imshow('Crop Image',crop_img)
+cv.imwrite('image/crop_img.jpg',crop_img)
 
 
 
